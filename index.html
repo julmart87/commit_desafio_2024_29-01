@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso de HTML</title>
+</head>
+<body>
+    
+<h1>Desafio 100 dias programando... </h1>
+<h2>Dia 1! Repasando HTML </h2>
+<p>Hoy doy comienzo a esta serie de desafios personales que eh de llamar<br> 
+   "Desafio 100 dias programando! Y que comienzo hoy 28 de Enero del 2024!<br>Que comience el Show!!!</p>
+   <hr/>
+   <!--Esta es una etiqueta de comentario-->
+   <p>En esta parrafo indicaremos <span style="color:red">La etiqueta de Spam.</span></p>
+   <!--A continuacion pondre una etiqueta de Hipervinculo <a> -->
+    <a href="https://google.com">Ir a Google</a> <br/>
+   <!--Con la etiquetaTarget blank podemos abrir una nueva pestaña.. -->
+    <a target="_blank" href="https://google.com">Ir a Google</a>
+    <!--Ahora colocaremos mediante un vinculo, una imagen a nuestra  pagina..-->
+    <br> <br> <br> <hr>
+    <img src="img/whats_sky.png" width="400">
+    <br> <br> <br> 
+    <hr>
+
+
+    <h2>Dias 2 !</h2>
+    <p>Lunes 29 de Enero,2024! A continuacion hare distintos formularios con la etiqueta "Form"</p><br>
+    <h3>1- Este es un formulario de tipo texto, para insertar un nombre</h3><br>
+    <form action="">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" placeholder="Escriba aqui su nombre" type="text">
+    </form>
+   <!--La etiqueta "placeholder" indica al usuario que tipo de dato debera insertar en el formulario-->
+   <br><br>
+   <h3>2- Este es un formulario de texto, para insertar un mail</h3><br>
+   <form action="">
+        <label for="email">Email</label>
+    <input id="email" name="email" placeholder="Escriba aqui su Email" type="email">
+   </form>
+   <!--La etiqueta "type, indicara que valor o dato insertaremos en la casilla"-->
+   <br><br>
+   <h3>3- En el siguiente formulario, tendremos que insertar una contraseña</h3><br>
+   <form action="">
+        <label for="password">Contraseña</label>
+    <input id="password" name="password" placeholder="Inserte aqui su contraseña" type="password">
+   </form>
+   <!--La etiqueta "Password" indica contraseña-->
+   <br><br>
+   <h3>4- En este formulario colocare un boton, del tipo "submit" que indicara enviar..</h3><br>
+   <form action="">
+        <label for="submit">Enviar</label>
+    <input id="submit" name="submit"type="submit">
+   </form>
+   <br><br>
+   <h3>Aqui colocare un input para seleccionar un archivo..</h3>
+   <form action="">
+    <label for="submit">Archivo</label>
+    <input id="file" name="file" type="file">
+   </form>
+   <!--La etiqueta "File" indica seleccionar un archivo-->
+   <br><br>
+
+   <p>A continuacion agregare una propiedad llamada "textarea", la cual sirve para 
+    colocar una caja y adentro el usuario puede dejar un comentario,etc.</p> <br>
+    <label for="comentario">Comentario:</label><br>
+    <textarea name="comentario" id="comentario" placeholder="Ingrese aqui su comentario" cols="50" rows="10"></textarea>
+    <!--Cols y rows son 2 atributos! Cols se refiere a la cantidad de columnas en la caja 
+    y Rows refiere a la cantidad de filas o altura que tendra el texarea..-->
+    <br>
+    <input type="submit">
+    <hr>
+
+    <h4>Ahora hare un formulario para ingresar nombre, apellido y un comentario</h4>
+    <br>
+    <form action="" method="get">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text"><br>
+        <label for="apellido">Apellido</label>
+        <input id="apellido" name="apellido" type="text"><br>
+        <textarea name="comentario" id="comentario" cols="50" rows="10"></textarea><br>
+        <input type="submit">
+    </form>
+    <br>
+
+    <h4><u>Botones!</u></h4><br>
+    <p>A continuacion colocares un par de botones de distintos tipos:</p>
+    <br>
+    <button type="button">Tipo boton</button><br>
+    <button type="reset">Tipo reset</button><br>
+    <button type="submit">Tipo submit</button>
+    <br><hr><br>
+
+    <h4><u>Listas!</u></h4>
+    <p>"ul"(ordered list) son las listas no ordenadas!</p>
+    <ul>
+        <li>Lista 1</li>
+        <li>Lista 2</li>
+        <li>Lista 3</li>
+        <li>Lista 4</li>
+    </ul>
+    <br>
+    <p>"ol"(unordered list) son las listas ordenadas</p>
+    <ol>
+        <li>Lista 1</li>
+        <li>Lista 2</li>
+        <li>Lista 3</li>
+        <li>Lista 4</li>
+    </ol>
+    <br>
+    <!--En estas listas coloque la propiedad value y me indica
+        desde que numero quiero empezar mi lista ordenada..-->
+    <ol>
+        <li value="20">lista</li>
+        <li>lista</li>
+        <li>lista</li>
+        <li>lista</li>
+        <!--Aqui coloque una sublista, destro de la lista 24-->
+        <li>
+            <ol>
+                <li>sub lista</li>
+                <li>sub lista</li>
+                <li>sub lista</li>
+            </ol>
+        </li>
+    </ol>
+    <br><hr><br>
+
+    <h4><ul>Tablas!</ul></h4>
+
+    <table style="border: 1px solid blue"; width="500 px";>
+        <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+        </thead>
+        </tr>
+        <tbody>
+        <tr>
+            <td>Lapicera</td>
+            <td>5 unidades</td>
+            <td>$ 5.000</td>
+        </tr>
+        <tr>
+            <td>Lapiz</td>
+            <td>a unidad</td>
+            <td>$ 1.000</td>
+        </tr>
+        <tr>
+            <td>Cartuchera</td>
+            <td>1 unidad</td>
+            <td>$ 3.599 </td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td></td>
+            <td>Total: $9.599</td>
+        </tfoot>
+    </table>
+
+
+</body>
+</html>
